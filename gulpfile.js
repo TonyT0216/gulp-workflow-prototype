@@ -9,4 +9,4 @@ const build = require('./dev/tools/gulp/tasks/build');
 const clean = require('./dev/tools/gulp/tasks/clean');
 
 // Default task
-exports.default = build.build;
+exports.default = clean.clean;

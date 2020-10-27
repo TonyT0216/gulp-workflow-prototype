@@ -1,10 +1,19 @@
 'use strict';
 
-const appSettings = require('../app-configs/appSettings.js')
+const appPaths = require('../app-configs/appPaths');
+const appSettings = require('../app-configs/appSettings');
 const del = require('del');
 
-function clean(done) {
+function cleanStaticDir(done) {
+    if (appSettings.clean === false) {
+        return done();
+    }
 
+    del.sync([
+        appPaths.rootStaticFolderGlob
+    ]);
+
+    return done();
 }
 
-exports.clean = clean;
+exports.clean = cleanStaticDir;

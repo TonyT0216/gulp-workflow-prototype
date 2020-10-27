@@ -8,4 +8,4 @@ module.exports = {
     svgs: false,
     copy: false,
     reload: false
-}
+};

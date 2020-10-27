@@ -1,7 +1,11 @@
 'use strict';
 
-function build(cb) {
-    cb();
-}
+const appPaths = require('../app-configs/appPaths');
+const appSettings = require('../app-configs/appSettings');
 
-exports.build = build;
+function buildJSFiles(done) {
+    if (appSettings.scripts === false) {
+        return done();
+    }
+
+}
