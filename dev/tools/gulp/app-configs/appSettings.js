@@ -1,11 +1,11 @@
 'use strict';
 
-let settings = {
+module.exports = {
     clean: true,
-    scripts: true,
-    polyfills: true,
-    styles: true,
-    svgs: true,
-    copy: true,
-    reload: true
-};
+    scripts: false,
+    polyfills: false,
+    styles: false,
+    svgs: false,
+    copy: false,
+    reload: false
+}
